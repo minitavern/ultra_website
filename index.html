@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="MiniTavern Ultra（超迷你酒馆）— BYOK 角色卡扮演。导入 SillyTavern 角色卡，自备密钥连接云端或本地模型，世界书、正则与互动卡面由你配置，数据留在本地。"
+    />
+    <meta name="theme-color" content="#0c0614" />
+    <title>MiniTavern Ultra · 超迷你酒馆</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/ultra_website/assets/index-CIbI--On.js"></script>
+    <link rel="stylesheet" crossorigin href="/ultra_website/assets/index-BCZR0Phm.css">
+  </head>
+  <body>
+    <div class="bg-glow" aria-hidden="true"></div>
+    <div class="bg-grid" aria-hidden="true"></div>
+
+    <header class="topbar" id="topbar">
+      <a class="brand" href="#top">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">
+          <span class="brand-en">MiniTavern</span>
+          <span class="brand-zh">超迷你酒馆</span>
+        </span>
+      </a>
+      <nav class="nav" aria-label="主导航">
+        <a href="#features">功能</a>
+        <a href="#start">上手</a>
+        <a href="https://minitavern.github.io/ultra_guides/manual/" rel="noopener"
+          >用户手册</a
+        >
+        <a href="https://minitavern.github.io/ultra_guides/quickstart" rel="noopener"
+          >本地模型</a
+        >
+      </nav>
+      <a class="btn btn-sm btn-primary topbar-cta" href="#get-app">获取应用</a>
+      <button class="nav-toggle" type="button" aria-label="打开菜单" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">MiniTavern Ultra</p>
+          <h1>把酒馆装进口袋里</h1>
+          <p class="lede">
+            导入喜欢的角色卡，用你自己的 API Key 或本地模型开聊。世界书、正则与互动卡面按需配置，聊天与备份都在你的设备上。
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#get-app">获取应用</a>
+            <a
+              class="btn btn-ghost"
+              href="https://minitavern.github.io/ultra_guides/manual/"
+              rel="noopener"
+              >阅读用户手册</a
+            >
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img
+            class="hero-shot"
+            src="/ultra_website/overview-hero.png"
+            width="1200"
+            height="720"
+            alt="MiniTavern Ultra 应用界面预览"
+            decoding="async"
+            fetchpriority="high"
+          />
+        </div>
+      </section>
+
+      <section class="section features" id="features">
+        <div class="section-head">
+          <h2>为角色扮演准备的能力</h2>
+          <p>只保留产品里真正有的功能，不堆无关卖点。</p>
+        </div>
+        <ul class="feature-list">
+          <li>
+            <h3>角色卡导入</h3>
+            <p>支持 PNG / JSON 角色卡，兼容 SillyTavern 常见规范；导入时可拆出世界书与正则。</p>
+          </li>
+          <li>
+            <h3>BYOK 模型连接</h3>
+            <p>自备密钥直连主流 API；也可接 Ollama、LM Studio 等本地服务，密钥与请求路径由你掌控。</p>
+          </li>
+          <li>
+            <h3>世界书</h3>
+            <p>关键词激活、常驻条目、会话多选绑定，长剧情设定不轻易丢。</p>
+          </li>
+          <li>
+            <h3>正则脚本</h3>
+            <p>全局正则组与卡级脚本，prompt / 展示分相处理，对齐酒馆进阶玩法。</p>
+          </li>
+          <li>
+            <h3>互动卡面</h3>
+            <p>HTML / CSS 前端渲染与变量状态，适合带界面的互动角色卡。</p>
+          </li>
+          <li>
+            <h3>人设与备份</h3>
+            <p>多套 Persona；完整备份导出与恢复，换机可带走聊天与配置。</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section start" id="start">
+        <div class="section-head">
+          <h2>三步开始</h2>
+          <p>有密钥就能聊；想跑本地模型也有专门教程。</p>
+        </div>
+        <ol class="steps">
+          <li>
+            <span class="step-n">1</span>
+            <div>
+              <h3>配置模型连接</h3>
+              <p>在设置里添加 API 连接并测试，或按教程搭建本地模型后再填入地址。</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-n">2</span>
+            <div>
+              <h3>导入或创建角色</h3>
+              <p>从文件导入角色卡，或手动填写角色信息后保存。</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-n">3</span>
+            <div>
+              <h3>开聊并按需进阶</h3>
+              <p>绑定世界书、正则与人设；需要时再开互动卡面与备份。</p>
+            </div>
+          </li>
+        </ol>
+        <div class="cta-row center">
+          <a
+            class="btn btn-primary"
+            href="https://minitavern.github.io/ultra_guides/manual/getting-started"
+            rel="noopener"
+            >从新手指南开始</a
+          >
+          <a
+            class="btn btn-ghost"
+            href="https://minitavern.github.io/ultra_guides/quickstart"
+            rel="noopener"
+            >本地模型快速上手</a
+          >
+        </div>
+      </section>
+
+      <section class="section get-app" id="get-app">
+        <div class="get-app-panel">
+          <h2>获取 MiniTavern Ultra</h2>
+          <p>
+            前往 <strong>App Store</strong> 或 <strong>Google Play</strong> 下载。一次买断，无广告、无订阅墙。
+          </p>
+          <div class="store-row">
+            <a
+              class="store-chip"
+              data-store="ios"
+              href="https://apps.apple.com/us/app/minitavern-ultra/id6777945004"
+              rel="noopener"
+              target="_blank"
+              >App Store</a
+            >
+            <a
+              class="store-chip"
+              data-store="android"
+              href="https://play.google.com/store/apps/details?id=com.kongyou.tavern.app"
+              rel="noopener"
+              target="_blank"
+              >Google Play</a
+            >
+          </div>
+          <p class="get-app-note">
+            使用问题可先看
+            <a href="https://minitavern.github.io/ultra_guides/manual/" rel="noopener">用户手册</a>
+            ，或在 App 内「帮助与反馈」写信。
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-brand">
+        <span class="brand-en">MiniTavern Ultra</span>
+        <span class="footer-sep">·</span>
+        <span>超迷你酒馆</span>
+      </div>
+      <div class="footer-links">
+        <a href="https://minitavern.github.io/ultra_guides/" rel="noopener">文档站</a>
+        <a href="https://minitavern.github.io/ultra_guides/manual/" rel="noopener">用户手册</a>
+        <a href="https://minitavern.github.io/ultra_guides/quickstart" rel="noopener">本地模型</a>
+        <a href="https://github.com/minitavern" rel="noopener">GitHub</a>
+      </div>
+    </footer>
+
+  </body>
+</html>
