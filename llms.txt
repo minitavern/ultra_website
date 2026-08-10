@@ -1,0 +1,24 @@
+# MiniTavern Ultra
+
+> MiniTavern Ultra（超迷你酒馆）是面向 AI 角色扮演的移动客户端。
+
+- 官网: https://minitavern.github.io/ultra_website/
+- 文档: https://minitavern.github.io/ultra_guides/
+- 联系: minitavern@gmail.com
+
+## 产品要点
+
+- 导入 SillyTavern / PNG / JSON 角色卡
+- BYOK：自备 API Key 连接主流模型
+- 本地模型：Ollama、LM Studio 等局域网服务
+- 世界书、正则脚本、互动卡面、人设与备份
+- 平台：iOS（App Store）、Android（Google Play）
+
+## 高频检索词
+
+酒馆, AI酒馆, 迷你酒馆, 超迷你酒馆, MiniTavern, Ai本地聊天, AI本地聊天, AI locale, Silly Tavern, SillyTavern, AI角色扮演, 角色卡, 本地大模型, Ollama, LM Studio, 世界书, 正则, BYOK, character card, AI roleplay
+
+## 下载
+
+- App Store: https://apps.apple.com/us/app/minitavern-ultra/id6777945004
+- Google Play: https://play.google.com/store/apps/details?id=com.kongyou.tavern.app

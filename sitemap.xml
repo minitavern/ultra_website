@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://minitavern.github.io/ultra_website/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minitavern.github.io/ultra_website/?lang=zh-CN"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://minitavern.github.io/ultra_website/?lang=zh-TW"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://minitavern.github.io/ultra_website/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://minitavern.github.io/ultra_website/?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://minitavern.github.io/ultra_website/?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://minitavern.github.io/ultra_website/?lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://minitavern.github.io/ultra_website/"/>
+  </url>
+</urlset>
