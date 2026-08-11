@@ -5,12 +5,72 @@
     <loc>https://minitavern.github.io/ultra_website/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minitavern.github.io/ultra_website/?lang=zh-CN"/>
-    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://minitavern.github.io/ultra_website/?lang=zh-TW"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://minitavern.github.io/ultra_website/?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://minitavern.github.io/ultra_website/?lang=de"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://minitavern.github.io/ultra_website/?lang=ja"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://minitavern.github.io/ultra_website/?lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minitavern.github.io/ultra_website/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://minitavern.github.io/ultra_website/zh-TW/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://minitavern.github.io/ultra_website/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://minitavern.github.io/ultra_website/de/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://minitavern.github.io/ultra_website/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://minitavern.github.io/ultra_website/ko/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://minitavern.github.io/ultra_website/"/>
+  </url>
+  <url>
+    <loc>https://minitavern.github.io/ultra_website/zh-TW/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minitavern.github.io/ultra_website/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://minitavern.github.io/ultra_website/zh-TW/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://minitavern.github.io/ultra_website/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://minitavern.github.io/ultra_website/de/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://minitavern.github.io/ultra_website/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://minitavern.github.io/ultra_website/ko/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://minitavern.github.io/ultra_website/"/>
+  </url>
+  <url>
+    <loc>https://minitavern.github.io/ultra_website/en/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minitavern.github.io/ultra_website/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://minitavern.github.io/ultra_website/zh-TW/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://minitavern.github.io/ultra_website/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://minitavern.github.io/ultra_website/de/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://minitavern.github.io/ultra_website/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://minitavern.github.io/ultra_website/ko/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://minitavern.github.io/ultra_website/"/>
+  </url>
+  <url>
+    <loc>https://minitavern.github.io/ultra_website/de/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minitavern.github.io/ultra_website/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://minitavern.github.io/ultra_website/zh-TW/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://minitavern.github.io/ultra_website/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://minitavern.github.io/ultra_website/de/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://minitavern.github.io/ultra_website/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://minitavern.github.io/ultra_website/ko/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://minitavern.github.io/ultra_website/"/>
+  </url>
+  <url>
+    <loc>https://minitavern.github.io/ultra_website/ja/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minitavern.github.io/ultra_website/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://minitavern.github.io/ultra_website/zh-TW/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://minitavern.github.io/ultra_website/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://minitavern.github.io/ultra_website/de/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://minitavern.github.io/ultra_website/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://minitavern.github.io/ultra_website/ko/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://minitavern.github.io/ultra_website/"/>
+  </url>
+  <url>
+    <loc>https://minitavern.github.io/ultra_website/ko/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minitavern.github.io/ultra_website/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://minitavern.github.io/ultra_website/zh-TW/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://minitavern.github.io/ultra_website/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://minitavern.github.io/ultra_website/de/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://minitavern.github.io/ultra_website/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://minitavern.github.io/ultra_website/ko/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://minitavern.github.io/ultra_website/"/>
   </url>
 </urlset>
