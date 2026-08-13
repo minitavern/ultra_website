@@ -14,6 +14,16 @@
     <meta name="author" content="MiniTavern" />
     <meta name="robots" content="index,follow,max-image-preview:large" />
     <meta name="theme-color" content="#0c0614" />
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5K5E93RDT0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-5K5E93RDT0");
+    </script>
     <link rel="canonical" href="https://minitavern.github.io/ultra_website/de/" />
         <link rel="alternate" hreflang="zh-CN" href="https://minitavern.github.io/ultra_website/" />
     <link rel="alternate" hreflang="zh-TW" href="https://minitavern.github.io/ultra_website/zh-TW/" />
@@ -101,42 +111,21 @@
             "downloadUrl": [
               "https://apps.apple.com/us/app/minitavern-ultra/id6777945004",
               "https://play.google.com/store/apps/details?id=com.kongyou.tavern.app"
-            ]
-          },
-          {
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "Was ist MiniTavern Ultra?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "MiniTavern Ultra ist eine AI-Roleplay-Chat-App. Erschaffe deinen AI-Begleiter oder importiere Charakterkarten für Roleplay. Nutze BYOK-APIs oder lokale Modelle sowie Lorebooks, Regex und interaktive Karten-UIs."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Unterstützt es lokale Modelle?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Ja. Verbinde Ollama, LM Studio und ähnliche Dienste im LAN. Die Doku erklärt Setup und Verbindung."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Kompatibel mit SillyTavern?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Gängige Charakterkarten-, Lorebook- und Regex-Formate sind an das SillyTavern-Ökosystem angelehnt — damit du Assets aufs Handy bringst und weiter Begleiter erschaffst oder Geschichten spielst."
-                }
-              }
+            ],
+            "featureList": [
+              "Mit Charakterkarte starten",
+              "BYOK oder lokale Modelle",
+              "Lorebooks halten Settings",
+              "Regex für die Darstellung",
+              "Immersiver Chat & Bildgen",
+              "Backups zum Mitnehmen"
             ]
           }
         ]
       }
     </script>
-    <script type="module" crossorigin src="/ultra_website/assets/index-BZoss2LH.js"></script>
-    <link rel="stylesheet" crossorigin href="/ultra_website/assets/index-BNwtgfBu.css">
+    <script type="module" crossorigin src="/ultra_website/assets/index-DYVOEQQR.js"></script>
+    <link rel="stylesheet" crossorigin href="/ultra_website/assets/index-DfL2jFg5.css">
   </head>
   <body>
     <div class="bg-glow" aria-hidden="true"></div>
@@ -259,38 +248,75 @@
           </div>
         </div>
 
-        <a class="scroll-hint" href="#journey">
+        <a class="scroll-hint" href="#chat-demo">
           <span class="scroll-mouse" aria-hidden="true"><span></span></span>
           <span data-i18n="scrollDown">向下滑动</span>
           <span class="scroll-arrow" aria-hidden="true">↓</span>
         </a>
       </section>
 
+      <section class="chat-demo" id="chat-demo" aria-label="chat demo">
+        <div class="chat-demo-pin">
+          <div class="chat-demo-copy">
+            <p class="chat-demo-eyebrow" data-i18n="chatDemoEyebrow">沉浸对话</p>
+            <div class="chat-demo-acts" aria-live="polite">
+              <div class="chat-demo-act is-active" data-act="0">
+                <span class="chat-demo-act-n">01</span>
+                <h2 data-i18n="chatDemoAct1Title">像真的在聊天一样</h2>
+                <p data-i18n="chatDemoAct1Body">
+                  开场白已就绪。向下滚动：输入框逐字打出你的话，点发送，角色再逐字回应——节奏跟 App
+                  里一样顺。
+                </p>
+              </div>
+              <div class="chat-demo-act" data-act="1">
+                <span class="chat-demo-act-n">02</span>
+                <h2 data-i18n="chatDemoAct2Title">智能生图，画面跟着剧情走</h2>
+                <p data-i18n="chatDemoAct2Body">
+                  加号里的「生图」可按故事、最后一句或自由指令出图；角色也能直接把拍到的画面发回聊天里。
+                </p>
+              </div>
+              <div class="chat-demo-act" data-act="2">
+                <span class="chat-demo-act-n">03</span>
+                <h2 data-i18n="chatDemoAct3Title">上传图片，把现场塞进对话</h2>
+                <p data-i18n="chatDemoAct3Body">
+                  点加号打开相册或拍照，缩略图先挂在输入框上方，配上一句再发出——图文同框，故事更立体。
+                </p>
+              </div>
+            </div>
+            <ol class="chat-demo-dots" aria-hidden="true">
+              <li class="is-active" data-dot="0"></li>
+              <li data-dot="1"></li>
+              <li data-dot="2"></li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
       <section class="journey" id="journey" aria-label="product journey">
         <div class="journey-pin">
-          <p class="journey-eyebrow" data-i18n="journeyEyebrow">三步上手</p>
           <div class="journey-stage">
             <div class="journey-copy">
+              <p class="journey-eyebrow" data-i18n="journeyEyebrow">三步上手</p>
               <div class="journey-acts" aria-live="polite">
                 <div class="journey-act is-active" data-act="0">
                   <span class="journey-act-n">01</span>
-                  <h2 data-i18n="journeyAct1Title">一张角色卡，故事就开始</h2>
+                  <h2 data-i18n="journeyAct1Title">从空首页导入角色卡</h2>
                   <p data-i18n="journeyAct1Body">
-                    从文件或链接导入 PNG / JSON 角色卡，预览确认后落位列表——创造伙伴或入戏扮演，同一入口。
+                    首页空状态点「导入角色卡」→ 点示例卡弹出开场白 → 确认后进入对话。
                   </p>
                 </div>
                 <div class="journey-act" data-act="1">
                   <span class="journey-act-n">02</span>
-                  <h2 data-i18n="journeyAct2Title">密钥在你手里</h2>
+                  <h2 data-i18n="journeyAct2Title">聊天中配置模型</h2>
                   <p data-i18n="journeyAct2Body">
-                    添加模型连接、一键测连，密钥与请求路径由你掌控；也能接家里电脑上的本地模型。
+                    对话页点模型连接提示 → 新建模型连接、填密钥、选模型、测连成功后添加。
                   </p>
                 </div>
                 <div class="journey-act" data-act="2">
                   <span class="journey-act-n">03</span>
-                  <h2 data-i18n="journeyAct3Title">角色随行，随时续写</h2>
+                  <h2 data-i18n="journeyAct3Title">发送消息，收到回复</h2>
                   <p data-i18n="journeyAct3Body">
-                    打开会话，用熟悉的语气继续聊。陪伴或长线剧情——把故事装进口袋。
+                    模型就绪后回到聊天：发出第一条消息，角色气泡回复，故事真正开始。
                   </p>
                 </div>
               </div>
@@ -301,172 +327,25 @@
               </ol>
             </div>
 
-            <div class="journey-phone" aria-hidden="true">
-              <div class="phone-frame" data-phone-act="0">
-                <div class="phone-screen">
-                  <img
-                    class="phone-shot is-active"
-                    data-shot="0"
-                    src="/ultra_website/shots/05-chara-import.png"
-                    alt=""
-                    width="1179"
-                    height="2556"
-                    decoding="async"
-                  />
-                  <img
-                    class="phone-shot"
-                    data-shot="1"
-                    src="/ultra_website/shots/05-chara-import-preview.png"
-                    alt=""
-                    width="1179"
-                    height="2556"
-                    decoding="async"
-                  />
-                  <img
-                    class="phone-shot"
-                    data-shot="2"
-                    src="/ultra_website/shots/04-chara-tab.png"
-                    alt=""
-                    width="1179"
-                    height="2556"
-                    decoding="async"
-                  />
-                </div>
-              </div>
-              <div class="phone-frame" data-phone-act="1">
-                <div class="phone-screen">
-                  <img
-                    class="phone-shot"
-                    data-shot="0"
-                    src="/ultra_website/shots/02-model-link-create.png"
-                    alt=""
-                    width="1179"
-                    height="2556"
-                    decoding="async"
-                  />
-                  <img
-                    class="phone-shot"
-                    data-shot="1"
-                    src="/ultra_website/shots/03-model-link-test-ok.png"
-                    alt=""
-                    width="1179"
-                    height="2556"
-                    decoding="async"
-                  />
-                  <img
-                    class="phone-shot"
-                    data-shot="2"
-                    src="/ultra_website/shots/07-model-link-list.png"
-                    alt=""
-                    width="1179"
-                    height="2556"
-                    decoding="async"
-                  />
-                </div>
-              </div>
-              <div class="phone-frame" data-phone-act="2">
-                <div class="phone-screen">
-                  <img
-                    class="phone-shot"
-                    data-shot="0"
-                    src="/ultra_website/shots/12-chat-list.png"
-                    alt=""
-                    width="1179"
-                    height="2556"
-                    decoding="async"
-                  />
-                  <img
-                    class="phone-shot"
-                    data-shot="1"
-                    src="/ultra_website/shots/06-chat-first-message.png"
-                    alt=""
-                    width="1179"
-                    height="2556"
-                    decoding="async"
-                  />
-                </div>
-              </div>
-            </div>
+            <div class="journey-phone" aria-hidden="true"></div>
           </div>
         </div>
       </section>
 
-      <section class="section deepen" id="deepen">
-        <div class="section-head">
-          <h2 data-i18n="deepenTitle">长线玩法，按需加深</h2>
-          <p data-i18n="deepenLede">世界书稳住设定，正则打磨呈现，备份换机带走——需要时再打开。</p>
-        </div>
-        <ul class="deepen-list">
-          <li class="deepen-card">
-            <div class="deepen-shot">
-              <img
-                src="/ultra_website/shots/15-lorebook-list.png"
-                alt=""
-                width="1179"
-                height="2556"
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
-            <h3 data-i18n="deepenLoreTitle">世界书稳住长线</h3>
-            <p data-i18n="deepenLoreBody">关键词激活、常驻条目、会话多选绑定，长剧情设定不轻易丢。</p>
-          </li>
-          <li class="deepen-card">
-            <div class="deepen-shot">
-              <img
-                src="/ultra_website/shots/18-regex-group-list.png"
-                alt=""
-                width="1179"
-                height="2556"
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
-            <h3 data-i18n="deepenRegexTitle">正则打磨呈现</h3>
-            <p data-i18n="deepenRegexBody">全局正则组与卡级脚本，prompt / 展示分相处理，对齐酒馆进阶玩法。</p>
-          </li>
-          <li class="deepen-card">
-            <div class="deepen-shot">
-              <img
-                src="/ultra_website/shots/23-backup-export.png"
-                alt=""
-                width="1179"
-                height="2556"
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
-            <h3 data-i18n="deepenBackupTitle">备份随身带走</h3>
-            <p data-i18n="deepenBackupBody">完整备份导出与恢复，换机可带走聊天与配置。</p>
-          </li>
-        </ul>
-        <div class="cta-row center">
-          <a
-            class="btn btn-primary"
-            data-i18n="startGuide"
-            data-link="getting-started"
-            href="https://minitavern.github.io/ultra_guides/manual/getting-started"
-            rel="noopener"
-            >从新手指南开始</a
-          >
-          <a
-            class="btn btn-ghost"
-            data-i18n="startLocal"
-            data-link="local"
-            href="https://minitavern.github.io/ultra_guides/local/"
-            rel="noopener"
-            >本地模型快速上手</a
-          >
+      <section class="deepen" id="deepen" aria-label="deepen demo">
+        <div class="deepen-pin">
+          <div class="deepen-stage-host" aria-hidden="true"></div>
         </div>
       </section>
 
-      <section class="section get-app" id="get-app">
-        <div class="get-app-panel">
+      <section class="get-app" id="get-app">
+        <div class="get-app-inner">
+          <p class="get-app-eyebrow" data-i18n="brandSub">超迷你酒馆</p>
           <h2 data-i18n="getAppTitle">获取 MiniTavern Ultra</h2>
-          <p data-i18n="getAppBody">
+          <p class="get-app-lede" data-i18n="getAppBody">
             前往 App Store 或 Google Play 下载。从一张角色卡开始：创造 AI 伙伴，或演你的故事。
           </p>
-          <div class="store-row">
+          <div class="store-row get-app-stores">
             <div class="store-wrap">
               <a
                 class="store-btn"
@@ -515,6 +394,24 @@
               </div>
             </div>
           </div>
+          <div class="get-app-cta">
+            <a
+              class="btn btn-primary"
+              data-i18n="startGuide"
+              data-link="getting-started"
+              href="https://minitavern.github.io/ultra_guides/manual/getting-started"
+              rel="noopener"
+              >从新手指南开始</a
+            >
+            <a
+              class="btn btn-ghost"
+              data-i18n="startLocal"
+              data-link="local"
+              href="https://minitavern.github.io/ultra_guides/local/"
+              rel="noopener"
+              >本地模型快速上手</a
+            >
+          </div>
           <p class="get-app-note">
             <span data-i18n="getAppNote">使用问题可先看</span>
             <a data-i18n="getAppNoteLink" data-link="docs" href="https://minitavern.github.io/ultra_guides/manual/" rel="noopener"
@@ -524,71 +421,80 @@
         </div>
       </section>
 
-      <section class="section faq" id="faq">
-        <div class="section-head">
-          <h2 data-i18n="faqTitle">常见问题</h2>
+      <section class="section features" id="features">
+        <div class="section-head features-head">
+          <h2 data-i18n="featuresTitle">App 里有什么</h2>
+          <p data-i18n="featuresLede">从角色卡到长线设定，把创造伙伴与入戏扮演装进口袋。</p>
         </div>
-        <div class="faq-list">
-          <details open>
-            <summary data-i18n="faq1Q">MiniTavern Ultra 是什么？</summary>
-            <p data-i18n="faq1A">
-              MiniTavern Ultra（超迷你酒馆）是一款 AI 角色扮演聊天应用。你可以创造属于自己的 AI
-              伙伴，也可以导入角色卡入戏扮演；支持自备 API（BYOK）或本地模型，以及世界书、正则与互动卡面。
-            </p>
-          </details>
-          <details>
-            <summary data-i18n="faq2Q">支持本地模型吗？</summary>
-            <p data-i18n="faq2A">
-              支持。可在同一局域网连接 Ollama、LM Studio 等本地推理服务。文档站提供本地模型部署与连接教程。
-            </p>
-          </details>
-          <details>
-            <summary data-i18n="faq3Q">和 SillyTavern 兼容吗？</summary>
-            <p data-i18n="faq3A">
-              角色卡、世界书与正则等常见格式对齐 SillyTavern 生态，便于把已有资源带到移动端，继续创造伙伴或演故事。
-            </p>
-          </details>
+        <div class="feature-grid">
+          <article class="feature-item">
+            <h3 data-i18n="feature1Title">角色卡开局</h3>
+            <p data-i18n="feature1Body">导入或创建角色卡，PNG / JSON 与生态格式对齐，马上开聊。</p>
+          </article>
+          <article class="feature-item">
+            <h3 data-i18n="feature2Title">自备 API 或本地模型</h3>
+            <p data-i18n="feature2Body">BYOK 连接云端；同一局域网也可接 Ollama、LM Studio。</p>
+          </article>
+          <article class="feature-item">
+            <h3 data-i18n="feature3Title">世界书稳住设定</h3>
+            <p data-i18n="feature3Body">关键词触发注入规则与背景，长线故事不塌。</p>
+          </article>
+          <article class="feature-item">
+            <h3 data-i18n="feature4Title">正则打磨呈现</h3>
+            <p data-i18n="feature4Body">剥离脚本、渲染状态栏，对话读起来干净清楚。</p>
+          </article>
+          <article class="feature-item">
+            <h3 data-i18n="feature5Title">沉浸对话与生图</h3>
+            <p data-i18n="feature5Body">流式回复、续写重生成；加号里按剧情生图，现场也能上传。</p>
+          </article>
+          <article class="feature-item">
+            <h3 data-i18n="feature6Title">备份换机带走</h3>
+            <p data-i18n="feature6Body">全量备份与单聊存档，数据优先留在本机。</p>
+          </article>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <div class="footer-brand">
-        <img class="footer-logo" src="/ultra_website/app-logo.png" width="28" height="28" alt="" />
-        <span class="brand-en" data-i18n="brandName">MiniTavern</span>
-        <span class="footer-sep">·</span>
-        <span data-i18n="brandSub">超迷你酒馆</span>
-      </div>
-      <div class="footer-links">
-        <a data-i18n="footerContact" data-link="contact" href="mailto:minitavern@gmail.com">联系我们</a>
-        <a
-          data-i18n="footerPrivacy"
-          data-link="privacy"
-          href="https://minitavern.github.io/ultra_privacy/"
-          rel="noopener"
-          >隐私协议</a
-        >
-        <a
-          data-i18n="footerTerms"
-          data-link="terms"
-          href="https://minitavern.github.io/ultra_guides/terms"
-          rel="noopener"
-          >服务条款</a
-        >
-        <a
-          data-i18n="footerHelp"
-          data-link="docs"
-          href="https://minitavern.github.io/ultra_guides/manual/"
-          rel="noopener"
-          >帮助中心</a
-        >
-        <a
-          data-i18n="footerLocal"
-          data-link="local"
-          href="https://minitavern.github.io/ultra_guides/local/"
-          rel="noopener"
-          >本地模型</a
-        >
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img class="footer-logo" src="/ultra_website/app-logo.png" width="28" height="28" alt="" />
+          <div class="footer-brand-text">
+            <span class="brand-en" data-i18n="brandName">MiniTavern</span>
+            <span data-i18n="brandSub">超迷你酒馆</span>
+          </div>
+        </div>
+        <nav class="footer-links" aria-label="footer">
+          <a data-i18n="footerContact" data-link="contact" href="mailto:minitavern@gmail.com">联系我们</a>
+          <a
+            data-i18n="footerPrivacy"
+            data-link="privacy"
+            href="https://minitavern.github.io/ultra_privacy/"
+            rel="noopener"
+            >隐私协议</a
+          >
+          <a
+            data-i18n="footerTerms"
+            data-link="terms"
+            href="https://minitavern.github.io/ultra_guides/terms"
+            rel="noopener"
+            >服务条款</a
+          >
+          <a
+            data-i18n="footerHelp"
+            data-link="docs"
+            href="https://minitavern.github.io/ultra_guides/manual/"
+            rel="noopener"
+            >帮助中心</a
+          >
+          <a
+            data-i18n="footerLocal"
+            data-link="local"
+            href="https://minitavern.github.io/ultra_guides/local/"
+            rel="noopener"
+            >本地模型</a
+          >
+        </nav>
       </div>
     </footer>
 
