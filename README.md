@@ -54,6 +54,49 @@ ssh -T git@github.com-minitavern
 
 `github.com-minitavern` 是 SSH Host 别名，不是真实域名；`REMOTE_URL` 必须写成 `git@github.com-minitavern:minitavern/ultra_website.git`。
 
+本机密钥位置（**不要提交、不要发聊天**）：
+
+| 文件 | 作用 |
+|------|------|
+| `~/.ssh/id_ed25519_minitavern` | 私钥（仅本机） |
+| `~/.ssh/id_ed25519_minitavern.pub` | 公钥（已加到 GitHub 账号 [minitavern](https://github.com/minitavern)） |
+| `~/.ssh/config` 里的 `Host github.com-minitavern` | 让 Git 只用这把钥匙，不碰个人账号 |
+
+全局 Git 仍可以是你的个人姓名/邮箱；本仓提交身份由 `.publish.env` 的 `GIT_NAME` / `GIT_EMAIL` 覆盖（`minitavern` / `minitavern@gmail.com`）。
+
+### 另一台电脑（同样用独立 minitavern 账号）
+
+推荐：**新电脑生成新钥匙**，把公钥加到 minitavern 账号。不要拷贝私钥。
+
+1. 登录 GitHub 账号 **minitavern**（不是个人号）。
+2. 新电脑生成专用钥匙：
+
+   ```bash
+   ssh-keygen -t ed25519 -C "minitavern@gmail.com" -f ~/.ssh/id_ed25519_minitavern
+   ```
+
+3. 把公钥加到 GitHub：**Settings → SSH and GPG keys → New SSH key**  
+   https://github.com/settings/keys  
+   标题填电脑名，内容是：
+
+   ```bash
+   cat ~/.ssh/id_ed25519_minitavern.pub
+   ```
+
+4. 新电脑 `~/.ssh/config` 写入与本机相同的 Host 别名（见上）。
+5. `ssh -T git@github.com-minitavern`，应显示 `Hi minitavern!`。
+6. 克隆时必须用别名 URL（不要用 `git@github.com:...`，否则会走个人钥匙）：
+
+   ```bash
+   git clone git@github.com-minitavern:minitavern/ultra_website.git
+   cd ultra_website
+   git checkout gh-pages
+   ```
+
+7. 复制 `.publish.env.example` 为 `.publish.env`，`GIT_EMAIL` / `REMOTE_URL` 与本机一致。之后发布仍是 `./publish.sh`。
+
+只有在暂时加不了 GitHub 新钥匙时，才把本机 `id_ed25519_minitavern`（私钥）和 `.pub` 拷到新电脑 `~/.ssh/`，权限 `chmod 600 ~/.ssh/id_ed25519_minitavern`，再配同样的 `config`。拷过去后仍要能 `ssh -T git@github.com-minitavern` 看到 `Hi minitavern!`。
+
 ### `.publish.env`
 
 `publish.sh` 每次运行都会把 `origin` 写成这里的 `REMOTE_URL`。
