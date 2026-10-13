@@ -9,6 +9,7 @@
 ## 产品要点
 
 - 导入 SillyTavern / PNG / JSON 角色卡
+- AI 一句话创建角色卡：描述想要的角色，生成名称、人设与开场白
 - BYOK：自备 API Key 连接主流模型
 - 本地模型：Ollama、LM Studio 等局域网服务
 - 世界书、正则脚本、互动卡面、人设与备份
