@@ -8,11 +8,13 @@
 
 ## 产品要点
 
-- 导入 SillyTavern / PNG / JSON 角色卡
-- AI 一句话创建角色卡：描述想要的角色，生成名称、人设与开场白
-- BYOK：自备 API Key 连接主流模型
-- 本地模型：Ollama、LM Studio 等局域网服务
-- 世界书、正则脚本、互动卡面、人设与备份
+- 一句话创建角色卡：描述想要的人，生成名称、人设与开场白，预览后开聊
+- 导入主流角色卡 v2 / v3（PNG / JSON）
+- 模型：GPT、Claude、OpenRouter 等，或同一局域网的 Ollama、LM Studio。密钥放在本机安全存储
+- 世界书、正则：创建或导入
+- 提示词预设：自建或导入 SillyTavern 预设（采样仍在模型设置）
+- 沉浸对话：识图、识人、回复图片
+- 全量备份与单聊存档；每一聊可单独覆盖模型、预设、世界书、正则和生图
 - 平台：iOS（App Store）、Android（Google Play）
 
 ## 高频检索词
